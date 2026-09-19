@@ -1,59 +1,64 @@
 # QVAC Local AI
 
-A lightweight web application that uses Tether's QVAC SDK to provide local AI responses.
+A local AI web application built with Tether's QVAC SDK. It provides a simple interface where users can enter questions and receive AI-generated responses.
 
-## GitHub Repository
+## Project Repository
 
-[Open the JosephDan repository](https://github.com/dumang11121/JosephDan)
+[View the source code on GitHub](https://github.com/dumang11121/JosephDan)
 
-## Features
+## What the App Does
 
-* Ask questions through a web interface
-* Generate AI responses locally
-* Uses Tether's QVAC SDK
-* No cloud AI API key required
-* Simple Node.js and Express application
+QVAC Local AI processes user questions through local AI inference and displays the generated response in the web application.
 
-## QVAC Functions
+## QVAC SDK Integration
 
-The application uses:
+This project uses two QVAC functions:
 
-* `loadModel()` to load the AI model
-* `completion()` to generate responses
+* `loadModel()` - Loads the AI model
+* `completion()` - Generates the response to the user's prompt
 
-## Requirements
+## Getting Started
+
+### Requirements
 
 * Node.js 22 or newer
 * npm
 * A computer supported by QVAC
 
-## Installation
+### Installation
 
-Clone the repository:
+Clone the project:
 
 `git clone https://github.com/dumang11121/JosephDan.git`
 
-Enter the project directory:
+Move into the project directory:
 
 `cd JosephDan`
 
-Install the dependencies:
+Install the required packages:
 
 `npm install`
 
-## Running the App
+### Start the Application
 
-Start the server:
+Run:
 
 `npm start`
 
-Then open:
+The server runs at:
 
 http://localhost:3000
 
-Enter a question and click **Ask AI** to receive an AI-generated response.
+Open the address in your browser, enter a question, and click **Ask AI**.
 
-## Technology
+## Project Files
+
+* `server.js` - Application server and QVAC integration
+* `public/index.html` - Web interface
+* `package.json` - Project configuration and dependencies
+* `README.md` - Project documentation
+
+## Technologies
 
 * Node.js
 * Express
